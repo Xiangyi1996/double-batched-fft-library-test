@@ -27,7 +27,8 @@ add_custom_target(doc-doxygen ALL DEPENDS ${DOXY_XML_INDEX})
 
 set(RST_DOC_FILES
     index.rst
-    api/index.rst
+    index.rst
+
     manual/build.rst
     manual/contributing.rst
     manual/encodings.rst

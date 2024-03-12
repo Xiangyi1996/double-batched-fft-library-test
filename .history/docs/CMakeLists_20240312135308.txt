@@ -27,14 +27,20 @@ add_custom_target(doc-doxygen ALL DEPENDS ${DOXY_XML_INDEX})
 
 set(RST_DOC_FILES
     index.rst
+    api/configuration.rst
+    api/generator.rst
     api/index.rst
+    api/jit_cache.rst
+    api/online_compiler.rst
+    api/plan.rst
+    api/utilities.rst
     manual/build.rst
-    manual/contributing.rst
-    manual/encodings.rst
+    manual/caching.rst
+    manual/data-layout.rst
+    manual/descriptor.rst
     manual/examples.rst
     manual/index.rst
-    manual/networks.rst
-    manual/pytorch.rst
+    manual/plans.rst
 )
 add_custom_command(OUTPUT ${SPHINX_INDEX}
     MAIN_DEPENDENCY ${SPHINX_SRC}/conf.py
